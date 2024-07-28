@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { About, Error, HomeLayout, Landing } from './pages';
+import { About, Error, HomeLayout, Landing, SinglePortfolio } from './pages';
 import { ErrorElement } from './components';
+
+import { loader as SinglePortfolioLoader } from './pages/SinglePortfolio';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,12 @@ const router = createBrowserRouter([
         path: 'about',
         element: <About />,
         errorElement: <ErrorElement />,
+      },
+      {
+        path: 'singlePortfolio/:id',
+        errorElement: <ErrorElement />,
+        element: <SinglePortfolio />,
+        loader: SinglePortfolioLoader,
       },
     ],
   },

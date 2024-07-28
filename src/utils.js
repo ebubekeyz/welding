@@ -84,6 +84,7 @@ export const menu = [
     price: 15.99,
     img: '/01.jpg',
     desc: `Lorem Ipsum dollor sit `,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-1',
   },
   {
@@ -93,6 +94,7 @@ export const menu = [
     price: 13.99,
     img: '/02.jpg',
     desc: `Lorem Ipsum dollor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-2',
   },
   {
@@ -102,6 +104,7 @@ export const menu = [
     price: 6.99,
     img: '/03.jpg',
     desc: `Lorem Ipsum dollor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-3',
   },
   {
@@ -111,6 +114,7 @@ export const menu = [
     price: 20.99,
     img: '/04.jpg',
     desc: `Lorem Ipsum dollor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-4',
   },
   {
@@ -119,8 +123,8 @@ export const menu = [
     category: 'decoratives',
     price: 22.99,
     img: '/05.jpg',
-    desc: `Lorem Ipsum dollor sit 
-    `,
+    desc: `Lorem Ipsum dollor sit  `,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-5',
   },
   {
@@ -130,6 +134,7 @@ export const menu = [
     price: 18.99,
     img: '/06.jpg',
     desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
   {
@@ -139,6 +144,7 @@ export const menu = [
     price: 18.99,
     img: '/07.jpg',
     desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
   {
@@ -148,6 +154,7 @@ export const menu = [
     price: 18.99,
     img: '/08.jpg',
     desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
   {
@@ -157,6 +164,7 @@ export const menu = [
     price: 18.99,
     img: '/09.jpg',
     desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
   {
@@ -166,6 +174,7 @@ export const menu = [
     price: 18.99,
     img: '/10.jpg',
     desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
   {
@@ -174,7 +183,7 @@ export const menu = [
     category: 'perforated',
     price: 18.99,
     img: '/11.jpg',
-    desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
   {
@@ -184,6 +193,7 @@ export const menu = [
     price: 18.99,
     img: '/12.jpg',
     desc: `Lorem ipsum dolor sit`,
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
     name: 'project-6',
   },
 ];

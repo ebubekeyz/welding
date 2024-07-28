@@ -36,7 +36,7 @@ const Footer = () => {
         </article>
 
         <article className="footer-second">
-          <img src="logo.png" alt="logo" className="footer-logo" />
+          <img src="/logo.png" alt="logo" className="footer-logo" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             qui provident id autem cum aperiam hic maxime quos modi unde.

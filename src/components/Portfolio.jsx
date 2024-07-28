@@ -10,6 +10,7 @@ import {
   FaSearchengin,
 } from 'react-icons/fa6';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 const allCategories = ['all', ...new Set(menu.map((item) => item.category))];
 
 const Portfolio = () => {
@@ -94,7 +95,10 @@ const Portfolio = () => {
                   <div className="item-info">
                     <header>
                       <FaSearchengin className="icon" onClick={displayImage} />
-                      <FaMap className="icon" />
+                      <Link to={`/singlePortfolio/${id}`}>
+                        {' '}
+                        <FaMap className="icon" />
+                      </Link>
                     </header>
                     <h4 className="item-text">{desc}</h4>
                   </div>

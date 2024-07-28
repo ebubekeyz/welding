@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     max-width: 30rem;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 1rem;
   }
   .add-anim {
     animation: appear 1s linear 1;
@@ -35,7 +35,8 @@ const Wrapper = styled.div`
 
   @media screen and (min-width: 800px) {
     .welcome {
-      margin-top: 12rem;
+      margin-top: 1rem;
+      max-width: 60rem;
     }
   }
 `;
