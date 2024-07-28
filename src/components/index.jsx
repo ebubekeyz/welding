@@ -9,3 +9,5 @@ export { default as Portfolio } from './Portfolio';
 export { default as HomeServices } from './HomeServices';
 export { default as Founder } from './Founder';
 export { default as Team } from './Team';
+export { default as Quote } from './Quote';
+export { default as Partner } from './Partner';
