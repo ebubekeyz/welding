@@ -197,3 +197,46 @@ export const menu = [
     name: 'project-6',
   },
 ];
+
+export const team = [
+  {
+    id: 1,
+    name: 'Nicholas Putnam',
+    title: 'controller',
+    img: '/team1.jpg',
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    link: '/',
+  },
+  {
+    id: 2,
+    name: 'Richard Williams',
+    title: 'Welder',
+    img: '/team2.jpg',
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    link: '/',
+  },
+  {
+    id: 3,
+    name: 'David Blankenship',
+    title: 'Locksmith',
+    img: '/team3.jpg',
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    link: '/',
+  },
+  {
+    id: 4,
+    name: 'Zachary Guzman',
+    title: 'Locksmith',
+    img: '/team4.jpg',
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    link: '/',
+  },
+  {
+    id: 5,
+    name: 'Jeremiah Evans',
+    title: 'Controller',
+    img: '/team5.jpg',
+    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    link: '/',
+  },
+];

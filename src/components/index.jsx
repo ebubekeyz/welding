@@ -8,3 +8,4 @@ export { default as Welcome } from './Welcome';
 export { default as Portfolio } from './Portfolio';
 export { default as HomeServices } from './HomeServices';
 export { default as Founder } from './Founder';
+export { default as Team } from './Team';

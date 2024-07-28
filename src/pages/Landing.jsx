@@ -1,5 +1,5 @@
 import Wrapper from '../assets/wrappers/Landing';
-import { Founder, HomeServices, Portfolio, Welcome } from '../components';
+import { Founder, HomeServices, Portfolio, Team, Welcome } from '../components';
 import Hero from '../components/Hero';
 
 const Landing = () => {
@@ -11,6 +11,7 @@ const Landing = () => {
         <Portfolio />
         <HomeServices />
         <Founder />
+        <Team />
       </section>
     </Wrapper>
   );
