@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   .team {
     margin-top: 4rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .team h2 {
@@ -71,7 +71,7 @@ const Wrapper = styled.div`
     .team-cont {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
+      gap: 2rem;
     }
   }
 `;
