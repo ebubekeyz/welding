@@ -22,9 +22,10 @@ const Welcome = () => {
           Welcome to <span className="col">Weld Central!</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-          reiciendis molestiae perspiciatis natus ea. Neque eveniet soluta
-          deserunt? Ipsum, pariatur!
+          Your ultimate destination for all things welding! Whether you're a
+          seasoned professional or just starting out in the world of welding,
+          we've got you covered. Explore our extensive range of welding
+          equipment, tools, and accessories designed to meet your every need.
         </p>
       </div>
     </Wrapper>

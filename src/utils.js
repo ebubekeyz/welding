@@ -3,20 +3,75 @@ import { nanoid } from 'nanoid';
 export const list = [
   {
     id: nanoid(),
-    image: '/hero-img-3.jpg',
+    image: '/hero-img-1.jpg',
     name: 'Read more',
-    title: 'Create earnings with integrity',
+    title: 'Forge Your Future: Explore Precision Welding Tools',
     quote:
-      'We endorse the expansion of investments in promising innovations.We endorse the expansion of investments in promising innovations',
+      'Emphasizes the idea of growth and advancement in welding skills through the use of high-quality, precise tools.',
     link1: '/about',
   },
   {
     id: nanoid(),
     image: '/hero-img-2.jpg',
     name: 'Read more',
-    title: 'Create earnings with integrity',
+    title:
+      'Craftsmanship Redefined: Quality Welding Equipment at Your Fingertips',
     quote:
-      'We endorse the expansion of investments in promising innovations.We endorse the expansion of investments in promising innovations',
+      'Highlights the focus on top-notch welding equipment that enhances craftsmanship and attention to detail.',
+    link1: '/services',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-3.jpg',
+    name: 'Read more',
+    title: 'Spark Your Creativity: Discover Innovative Welding Solutions',
+    quote:
+      'Encourages creativity and innovation in welding projects by introducing new and inventive solutions.',
+    link1: '/services',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-4.jpg',
+    name: 'Read more',
+    title: 'Ignite Your Skills: Unleash the Power of Precision Welding',
+    quote:
+      'Encourages users to enhance their welding skills by utilizing tools that provide precision and accuracy.',
+    link1: '/services',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-5.jpg',
+    name: 'Read more',
+    title: 'Weld with Confidence: Trusted Tools for Every Project',
+    quote:
+      'Instills confidence in users by offering reliable and trusted tools suitable for a wide range of welding projects.',
+    link1: '/services',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-6.jpg',
+    name: 'Read more',
+    title: 'Precision Meets Passion: Elevate Your Welding Experience',
+    quote:
+      'Combines the precision of tools with the passion for welding, promising an elevated and fulfilling welding experience.',
+    link1: '/services',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-7.jpg',
+    name: 'Read more',
+    title: 'Explore, Weld, Create: Your Journey Starts Here',
+    quote:
+      'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    link1: '/services',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-9.jpg',
+    name: 'Read more',
+    title: 'Empower Your Craft: Quality Tools for Every Welding Task',
+    quote:
+      'Focuses on empowering users to excel in their craft by providing quality tools that cater to every welding task they may encounter.',
     link1: '/services',
   },
 ];

@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     max-width: 30rem;
     margin: 0 auto;
     text-align: center;
+    margin-top: 11rem;
   }
   .add-anim {
     animation: appear 1s linear 1;
@@ -29,6 +30,12 @@ const Wrapper = styled.div`
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .welcome {
+      margin-top: 12rem;
     }
   }
 `;

@@ -31,7 +31,7 @@ const Portfolio = () => {
     window.location.reload('/');
   };
   const displayImage = () => {
-    setShow(<Popup onClick={removePop} id="remove" />);
+    setShow(<Popup />);
   };
 
   return (
