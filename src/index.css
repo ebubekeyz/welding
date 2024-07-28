@@ -417,6 +417,9 @@ a:hover {
 .anim {
   animation: appear 3s linear infinite;
 }
+.anim2 {
+  animation: appear 3s linear 1;
+}
 @keyframes appear {
   from {
     transform: scale(0.8);
