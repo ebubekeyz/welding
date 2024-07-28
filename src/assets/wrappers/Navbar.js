@@ -57,7 +57,7 @@ const Wrapper = styled.div`
   }
   .detail2 p {
     color: var(--clr-grey-9);
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-transform: lowercase;
   }
   .list li {
@@ -86,7 +86,7 @@ const Wrapper = styled.div`
     gap: 1rem;
   }
   .detail p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--clr-grey-9);
   }
 

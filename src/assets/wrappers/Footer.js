@@ -60,7 +60,7 @@ const Wrapper = styled.div`
   }
 
   .detail p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--clr-grey-9);
   }
 

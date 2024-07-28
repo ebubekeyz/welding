@@ -464,7 +464,7 @@ a:hover {
 
 .spinner::before {
   inset: 0;
-  border: 3px solid turquoise;
+  border: 3px solid rgba(235, 165, 16, 0.9);
   border-radius: 50%;
   mask-image: conic-gradient(transparent 10%, black);
   animation: borderScale var(--t) linear infinite alternate;
@@ -477,7 +477,8 @@ a:hover {
   height: 20%;
   background: radial-gradient(circle at 30% 35%, white 3px, transparent 0),
     radial-gradient(circle at 70% 35%, white 3px, transparent 0),
-    radial-gradient(circle at top center, white 6px, transparent 0), turquoise;
+    radial-gradient(circle at top center, white 6px, transparent 0),
+    rgba(235, 165, 16, 0.9);
   background-position: 0 0, 0 0, 0 1.25rem;
   top: 0;
   translate: 0 -50%;
@@ -500,6 +501,6 @@ a:hover {
 
 @keyframes borderScale {
   to {
-    border: 6px solid turquoise;
+    border: 6px solid rgba(235, 165, 16, 0.9);
   }
 }
