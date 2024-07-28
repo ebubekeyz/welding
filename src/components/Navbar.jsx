@@ -90,7 +90,7 @@ const Navbar = () => {
           <div className="detail">
             {' '}
             <FaEnvelope className="ico" />
-            <p>test@gmail.com</p>
+            <p>weldcentral@gmail.com</p>
           </div>
         </article>
       </nav>
@@ -129,7 +129,7 @@ const Navbar = () => {
             </div>
             <div className="detail2">
               <FaEnvelope className="ico" />
-              <p>test@gmail.com</p>
+              <p>weldcentral@gmail.com</p>
             </div>
           </div>
         </ul>

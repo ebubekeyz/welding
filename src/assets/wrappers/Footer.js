@@ -104,9 +104,8 @@ const Wrapper = styled.div`
 
     .socials {
       display: flex;
-      column-gap: 2.5rem;
+      column-gap: 1rem;
       align-items: center;
-      padding-right: 2rem;
     }
 
     .footer-second,

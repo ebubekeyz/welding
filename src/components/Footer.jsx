@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="detail">
               {' '}
               <FaEnvelope className="ico" />
-              <p>test@gmail.com</p>
+              <p>weldcentral@gmail.com</p>
             </div>
           </article>
         </article>
