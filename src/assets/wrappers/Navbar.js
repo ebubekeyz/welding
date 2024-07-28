@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     padding: 1rem 1rem;
-    padding-right: 2rem;
+    padding-right: 1.7rem;
   }
   .bar {
     font-size: 1.7rem;
@@ -153,7 +153,7 @@ const Wrapper = styled.div`
       display: flex;
       column-gap: 2.5rem;
       align-items: center;
-      padding-right: 2rem;
+      padding-right: 4rem;
     }
     .bar {
       display: none;

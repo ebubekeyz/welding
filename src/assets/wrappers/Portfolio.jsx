@@ -22,23 +22,20 @@ const Wrapper = styled.div`
     object-fit: cover;
   }
   .menu {
-    padding: 5rem 0;
+    padding: 0rem 0;
   }
 
   .btn-container {
-    margin: 2rem 0 4rem 0;
+    margin: 2rem 0 0rem 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    background: #1a1a1a;
   }
   .port-center {
-    width: 100%;
-    margin: 0 auto;
-    max-width: var(--max-width);
     display: grid;
     transition: var(--transition);
-    gap: 2rem;
   }
   .port-btn {
     text-transform: uppercase;
@@ -141,9 +138,6 @@ const Wrapper = styled.div`
   .port-center {
     justify-items: center;
   }
-  .menu-item {
-    max-width: 25rem;
-  }
 
   @media screen and (min-width: 992px) {
     .port-center {
@@ -159,8 +153,11 @@ const Wrapper = styled.div`
   }
   @media screen and (min-width: 1170px) {
     .port-center {
-      width: 95vw;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      place-items: center;
+      justify-content: center;
+      margin: 0 auto;
     }
   }
 

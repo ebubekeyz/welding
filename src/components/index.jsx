@@ -6,3 +6,4 @@ export { default as Footer } from './Footer';
 export { default as Copyright } from './Copyright';
 export { default as Welcome } from './Welcome';
 export { default as Portfolio } from './Portfolio';
+export { default as HomeServices } from './HomeServices';

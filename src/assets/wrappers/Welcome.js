@@ -5,6 +5,7 @@ const Wrapper = styled.div`
     display: grid;
     gap: 1rem;
     place-items: center;
+    width:95%;
     max-width: 30rem;
     margin: 0 auto;
     text-align: center;
