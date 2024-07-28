@@ -318,7 +318,7 @@ a:hover {
 }
 .info {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100vw;
@@ -332,7 +332,7 @@ a:hover {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 0rem auto;
   letter-spacing: 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   max-width: 30rem;
   text-shadow: 0px 0px 50px rgb(155, 150, 150);
   color: var(--clr-grey-9);
