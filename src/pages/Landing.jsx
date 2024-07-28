@@ -1,5 +1,6 @@
 import Wrapper from '../assets/wrappers/Landing';
 import {
+  Blog,
   Founder,
   HomeServices,
   Partner,
@@ -21,6 +22,7 @@ const Landing = () => {
         <Founder />
         <Team />
         <Quote />
+        <Blog />
         <Partner />
       </section>
     </Wrapper>

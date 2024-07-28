@@ -11,3 +11,4 @@ export { default as Founder } from './Founder';
 export { default as Team } from './Team';
 export { default as Quote } from './Quote';
 export { default as Partner } from './Partner';
+export { default as Blog } from './Blog';

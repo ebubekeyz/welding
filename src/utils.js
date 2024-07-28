@@ -240,3 +240,33 @@ export const team = [
     link: '/',
   },
 ];
+
+export const blog = [
+  {
+    id: 1,
+    name: 'Nicholas Putnam',
+    category: 'News',
+    title: 'controller',
+    img: '/blog1.jpg',
+    text: 'A seasoned welder with over a decade of experience, combines technical skill with a passion for precision.',
+    link: '/',
+  },
+  {
+    id: 2,
+    name: 'Richard Williams',
+    category: 'News',
+    title: 'Welder',
+    img: '/blog2.jpg',
+    text: 'A dynamic welder with over eight years of hands-on experience in the field, renowned for her innovative approach and exceptional skill.',
+    link: '/',
+  },
+  {
+    id: 3,
+    name: 'David Blankenship',
+    category: 'News',
+    title: 'Locksmith',
+    img: '/blog3.jpg',
+    text: 'A highly skilled welder with over 15 years of experience in the trade, known for his expertise in both structural and pipe welding.',
+    link: '/',
+  },
+];
