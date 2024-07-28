@@ -35,11 +35,12 @@ const Wrapper = styled.div`
     transform: translateY(-10px);
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1300px) {
     .homeServices {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: center;
+
       margin: 0 auto;
       text-align: center;
       gap: 2em;
