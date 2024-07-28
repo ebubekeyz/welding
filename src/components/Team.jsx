@@ -3,6 +3,19 @@ import Wrapper from '../assets/wrappers/Team';
 import { team } from '../utils';
 
 const Team = () => {
+  window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+    const team = document.querySelectorAll('.team-cont-inner');
+    team.forEach((item) => {
+      const teamHeight = item.getBoundingClientRect().height;
+
+      if (scrollHeight > teamHeight) {
+        item.classList.add('anim2');
+      } else {
+        item.classList.remove('anim2');
+      }
+    });
+  });
   return (
     <Wrapper>
       <div className="team">

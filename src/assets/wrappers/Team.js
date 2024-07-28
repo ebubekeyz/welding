@@ -73,6 +73,9 @@ const Wrapper = styled.div`
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
     }
+    .team {
+      padding: 0 2rem;
+    }
   }
 `;
 
