@@ -10,6 +10,8 @@ import { FaTimes, FaUserTimes } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
 
+import { Link, NavLink } from 'react-router-dom';
+
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
@@ -61,20 +63,20 @@ const Navbar = () => {
 
         <ul className="list">
           <li>
-            <a href="/">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="/services">services</a>
+            <NavLink to="/services">services</NavLink>
           </li>
 
           <li>
-            <a href="/about">about</a>
+            <NavLink to="/about">about</NavLink>
           </li>
           <li>
-            <a href="/portfolio">portfolio</a>
+            <NavLink to="/portfolio">portfolio</NavLink>
           </li>
           <li>
-            <a href="/contacts">contacts</a>
+            <NavLink to="/contacts">contacts</NavLink>
           </li>
         </ul>
 
@@ -98,26 +100,26 @@ const Navbar = () => {
         </div>
 
         <ul className="nav-body-list">
-          <a href="/">
+          <NavLink to="/">
             <li>Home </li>
-          </a>
+          </NavLink>
 
-          <a href="/services">
+          <NavLink to="/services">
             <li>services </li>
-          </a>
+          </NavLink>
 
-          <a href="/about">
+          <NavLink to="/about">
             <li>about </li>
-          </a>
+          </NavLink>
 
-          <a href="/portfolio">
+          <NavLink to="/portfolio">
             <li>portfolio </li>
-          </a>
+          </NavLink>
 
-          <a href="/contacts">
+          <NavLink to="/contacts">
             {' '}
             <li style={{ marginBottom: '1rem' }}>contacts </li>
-          </a>
+          </NavLink>
 
           <div className="socials2">
             <div className="detail2">

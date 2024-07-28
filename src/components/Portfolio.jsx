@@ -108,10 +108,10 @@ const Portfolio = () => {
                   <div className="item-info">
                     <header>
                       <FaSearchengin className="icon" onClick={displayImage} />
-                      <Link to={`/singlePortfolio/${id}`}>
+                      <a href={`/singlePortfolio/${id}`}>
                         {' '}
                         <FaMap className="icon" />
-                      </Link>
+                      </a>
                     </header>
                     <h4 className="item-text">{desc}</h4>
                   </div>
