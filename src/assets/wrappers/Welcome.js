@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     margin: 0 auto;
     text-align: center;
     margin-top: 1rem;
+    z-index: -300;
   }
   .add-anim {
     animation: appear 1s linear 1;
