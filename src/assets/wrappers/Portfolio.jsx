@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  margin-bottom: 8rem;
   .popup-inner {
     position: fixed;
     top: 0;
@@ -37,7 +38,7 @@ const Wrapper = styled.div`
     max-width: var(--max-width);
     display: grid;
     transition: var(--transition);
-    // gap: 1rem;
+    gap: 2rem;
   }
   .port-btn {
     text-transform: uppercase;
@@ -45,14 +46,14 @@ const Wrapper = styled.div`
   .port-img {
     object-fit: cover;
     transition: var(--transition);
+    /* border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem; */
   }
   .menu-item {
     transition: var(--transition);
-    cursor: pointer;
     position: relative;
     height: 15rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-radius: 0.5rem;
     width: 100%;
   }
 
@@ -73,27 +74,43 @@ const Wrapper = styled.div`
 
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
 
     transition: var(--transition);
   }
   .menu-item:hover::after {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
   }
 
-  /* .item-info {
+  .menu-item:hover .item-info {
+    display: grid;
+  }
+
+  .item-info {
     padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 50%;
+    transition: var(--transition);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    display: none;
   }
   .item-info header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    transition: var(--transition);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-bottom: 1.25rem;
   }
 
-  .item-info h5 {
+  .item-info h4 {
     font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.6px;
   }
   .item-price {
     background: var(--primary-500);
@@ -101,16 +118,28 @@ const Wrapper = styled.div`
     padding: 0.25rem 0.5rem;
     letter-spacing: var(--letterSpacing);
     border-radius: var(--borderRadius);
-  } */
+  }
 
-  /* .item-text {
+  .icon {
+    background: rgba(235, 165, 16, 0.5);
+    color: var(--clr-grey-10);
+    font-size: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .icon:hover {
+    transform: rotate(90deg);
+  }
+
+  .item-text {
     line-height: 2;
     color: var(--grey-500);
-  }*/
-
-  /* .port-center {
+  }
+  .port-center {
     justify-items: center;
-  } */
+  }
   .menu-item {
     max-width: 25rem;
   }

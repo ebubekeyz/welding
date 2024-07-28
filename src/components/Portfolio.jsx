@@ -2,6 +2,13 @@ import { useState } from 'react';
 import Wrapper from '../assets/wrappers/Portfolio';
 import { menu } from '../utils';
 import Popup from './Popup';
+import {
+  FaMap,
+  FaMapLocation,
+  FaMapLocationDot,
+  FaMapPin,
+  FaSearchengin,
+} from 'react-icons/fa6';
 const allCategories = ['all', ...new Set(menu.map((item) => item.category))];
 
 const Portfolio = () => {
@@ -18,9 +25,9 @@ const Portfolio = () => {
     const newItems = menu.filter((item) => item.category === category);
     setMenuItems(newItems);
   };
-  const displayImage = (img) => {
-    setShow(<Popup src={img} id="pop" />);
-  };
+  // const displayImage = (img) => {
+  //   setShow(<Popup src={img} id="pop" />);
+  // };
 
   return (
     <>
@@ -49,20 +56,22 @@ const Portfolio = () => {
                 <article
                   key={id}
                   className="menu-item"
-                  onClick={() => displayImage(img)}
+                  // onClick={() => displayImage(img)}
                 >
-                  <img
-                    src={img}
-                    alt={title}
-                    className={`img port-img ${name}`}
-                  />
-                  {/* <div className="item-info">
-                  <header>
-                    <h5>{title}</h5>
-                    <span className="item-price">${price}</span>
-                  </header>
-                  <p className="item-text">{desc}</p>
-                </div> */}
+                  <div className="menu-item2">
+                    <img
+                      src={img}
+                      alt={title}
+                      className={`img port-img ${name}`}
+                    />
+                  </div>
+                  <div className="item-info">
+                    <header>
+                      <FaSearchengin className="icon" />
+                      <FaMap className="icon" />
+                    </header>
+                    <h4 className="item-text">{desc}</h4>
+                  </div>
                 </article>
               );
             })}
