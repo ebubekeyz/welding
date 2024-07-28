@@ -43,6 +43,8 @@ const Wrapper = styled.div`
       margin: 0 auto;
       text-align: center;
       gap: 2em;
+      padding: 0 2rem;
+      max-width: 1127px;
     }
   }
 `;

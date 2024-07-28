@@ -16,6 +16,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <section className="footer">
+        <div className="foot-inner"></div>
         <article>
           <h1>Newsletter</h1>
           <p>

@@ -204,7 +204,7 @@ export const team = [
     name: 'Nicholas Putnam',
     title: 'controller',
     img: '/team1.jpg',
-    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    text: 'A seasoned welder with over a decade of experience, combines technical skill with a passion for precision.',
     link: '/',
   },
   {
@@ -212,7 +212,7 @@ export const team = [
     name: 'Richard Williams',
     title: 'Welder',
     img: '/team2.jpg',
-    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    text: 'A dynamic welder with over eight years of hands-on experience in the field, renowned for her innovative approach and exceptional skill.',
     link: '/',
   },
   {
@@ -220,7 +220,7 @@ export const team = [
     name: 'David Blankenship',
     title: 'Locksmith',
     img: '/team3.jpg',
-    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    text: 'A highly skilled welder with over 15 years of experience in the trade, known for his expertise in both structural and pipe welding.',
     link: '/',
   },
   {
@@ -228,7 +228,7 @@ export const team = [
     name: 'Zachary Guzman',
     title: 'Locksmith',
     img: '/team4.jpg',
-    text: 'Invites users to embark on a journey of exploration, welding, and creation with the resources and tools available on the website.',
+    text: 'A versatile welder with over a decade of experience specializing in both commercial and residential projects.',
     link: '/',
   },
   {

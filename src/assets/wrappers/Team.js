@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   .team h2 {
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 3rem;
   }
   .team-cont {
     display: grid;
@@ -75,6 +76,8 @@ const Wrapper = styled.div`
     }
     .team {
       padding: 0 2rem;
+      max-width: 1127px;
+      margin: 0 auto;
     }
   }
 `;

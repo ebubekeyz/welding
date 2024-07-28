@@ -38,6 +38,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 800px) {
     .welcome {
       margin-top: 1rem;
+      margin: 0 auto;
       max-width: 40rem;
     }
   }

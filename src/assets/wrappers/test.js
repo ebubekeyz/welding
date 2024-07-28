@@ -1,51 +1,7 @@
-import styled from 'styled-components';
+// Jake Thompson, a seasoned welder with over a decade of experience, combines technical skill with a passion for precision. From high-rise construction projects to intricate metal art, Jake's expertise spans a diverse array of welding techniques and materials. Known for his meticulous attention to detail and unwavering commitment to safety, he consistently delivers exceptional results. His dedication to his craft and his ability to adapt to complex challenges make him a valued team member and a trusted professional in the field. When Jake isn’t welding, he’s often sharing his knowledge with aspiring welders or exploring new advancements in welding technology.
 
-const Wrapper = styled.div`
-  .homeServices {
-    display: grid;
+// Maria Rodriguez is a dynamic welder with over eight years of hands-on experience in the field, renowned for her innovative approach and exceptional skill. Specializing in both MIG and TIG welding, Maria excels in delivering flawless results on everything from automotive repairs to large-scale industrial projects. Her meticulous craftsmanship and commitment to quality have earned her recognition as a reliable and creative problem-solver. Passionate about her trade, Maria constantly seeks to refine her techniques and embrace new technologies, making her a standout in the welding community and a crucial asset to any team she joins.
 
-    justify-content: center;
+// Liam Carter is a highly skilled welder with over 15 years of experience in the trade, known for his expertise in both structural and pipe welding. His hands-on approach and deep understanding of various welding processes make him adept at handling complex projects with precision. Liam's reputation for reliability and craftsmanship is matched by his dedication to safety and continuous improvement. Outside of work, he enjoys mentoring younger welders, sharing his extensive knowledge, and staying updated with the latest industry advancements, reflecting his passion for both the craft and the community.
 
-    margin: 0 auto;
-    text-align: center;
-    gap: 2em;
-    padding: 0 2rem;
-  }
-  .home-info h3 {
-    padding: 0;
-    margin: 0;
-  }
-  .home-info {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 0 auto;
-    place-items: center;
-    text-align: center;
-    transition: var(--transition);
-  }
-
-  .home-img {
-    width: 2.5em;
-    margin: 0;
-    padding: 0;
-    transition: var(--transition);
-  }
-  .home-info:hover .home-img {
-    transform: translateY(-10px);
-  }
-
-  @media screen and (min-width: 1300px) {
-    .homeServices {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-content: center;
-
-      margin: 0 auto;
-      text-align: center;
-      gap: 2em;
-    }
-  }
-`;
-
-export default Wrapper;
+// Alex Kim is a versatile welder with over a decade of experience specializing in both commercial and residential projects. Known for his expert skill in arc and gas welding, Alex consistently delivers high-quality results with efficiency and precision. His problem-solving abilities and attention to detail have earned him a reputation as a go-to professional for challenging assignments. Passionate about his craft, Alex also enjoys staying on top of emerging technologies and techniques, ensuring his work remains at the forefront of the industry. When he’s not on the job, he’s often found perfecting his skills in his home workshop or volunteering to teach welding to local youth.

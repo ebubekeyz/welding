@@ -12,7 +12,6 @@ const Wrapper = styled.div`
   }
   .founder-img {
     object-fit: cover;
-    height: 30rem;
   }
   .founder-info {
     padding: 2rem;
@@ -29,6 +28,8 @@ const Wrapper = styled.div`
     }
     .founder-info {
       width: 50%;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
     .founder {
       display: flex;
