@@ -507,3 +507,13 @@ a:hover {
     border: 6px solid rgba(235, 165, 16, 0.9);
   }
 }
+
+.partner-anim {
+  animation: change 1s linear 1;
+}
+@keyframes change {
+  from {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+}

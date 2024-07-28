@@ -13,6 +13,21 @@ const Wrapper = styled.div`
   .partner-img {
     object-fit: contain;
     height: 5rem;
+    transition: var(--transition);
+  }
+  .partner-img:hover {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+  .partner-anim {
+    animation: change 1s linear 1;
+  }
+  @keyframes change {
+    from {
+      opacity: 0.5;
+      transform: scale(0.9);
+    }
   }
 `;
 

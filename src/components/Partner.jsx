@@ -1,6 +1,19 @@
 import Wrapper from '../assets/wrappers/Partner';
 
 const Partner = () => {
+  window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+    const partner = document.querySelectorAll('.partner-img');
+    partner.forEach((item) => {
+      const partnerHeight = item.getBoundingClientRect().height;
+
+      if (scrollHeight > partnerHeight) {
+        item.classList.add('partner-anim');
+      } else {
+        item.classList.remove('partner-anim');
+      }
+    });
+  });
   return (
     <Wrapper>
       <div className="partner">
