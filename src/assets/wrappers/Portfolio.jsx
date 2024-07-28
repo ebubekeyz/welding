@@ -108,9 +108,10 @@ const Wrapper = styled.div`
   }
 
   .item-info h4 {
-    font-weight: 500;
-    font-size: 1.2rem;
-    letter-spacing: 0.6px;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    text-align: center;
   }
   .item-price {
     background: var(--primary-500);
@@ -161,6 +162,103 @@ const Wrapper = styled.div`
       width: 95vw;
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  .slider-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 800;
+  }
+  .slide {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: var(--transition);
+  }
+  .person-img {
+    width: 80%;
+    max-width: 30rem;
+    height: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 4px solid var(--primary-200);
+    box-shadow: var(--shadow-3);
+  }
+
+  .name {
+    text-transform: uppercase;
+    color: var(--primary-500);
+    margin-bottom: 0.75rem;
+  }
+  .title {
+    text-transform: capitalize;
+    color: var(--grey-700);
+    margin-bottom: 0.75rem;
+  }
+  .text {
+    max-width: 35em;
+    margin: 0 auto;
+    margin-top: 2rem;
+    line-height: 2;
+    color: var(--grey-500);
+  }
+  .ico {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: var(--primary-500);
+  }
+  .prev,
+  .next {
+    padding: 7rem 1rem;
+    position: absolute;
+    top: 200px;
+    background: var(--grey-500);
+    color: var(--white);
+    width: 1.25rem;
+    height: 1.25rem;
+    display: grid;
+
+    place-items: center;
+    border-color: transparent;
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .prev:hover,
+  .next:hover {
+    background: var(--primary-500);
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  @media screen and (min-width: 800px) {
+    .text {
+      max-width: 45em;
+    }
+    .prev,
+    .next {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.5rem;
+      padding: 7rem 22rem;
+    }
+  }
+  .next-slide {
+    transform: translateX(100%);
   }
 `;
 

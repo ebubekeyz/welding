@@ -25,9 +25,14 @@ const Portfolio = () => {
     const newItems = menu.filter((item) => item.category === category);
     setMenuItems(newItems);
   };
-  // const displayImage = (img) => {
-  //   setShow(<Popup src={img} id="pop" />);
-  // };
+  const removePop = () => {
+    const hide = document.querySelector('#remove');
+    hide.style.display = 'none';
+    window.location.reload('/');
+  };
+  const displayImage = () => {
+    setShow(<Popup onClick={removePop} id="remove" />);
+  };
 
   return (
     <>
@@ -53,11 +58,7 @@ const Portfolio = () => {
             {menuItems.map((item) => {
               const { id, img, title, price, desc, name } = item;
               return (
-                <article
-                  key={id}
-                  className="menu-item"
-                  // onClick={() => displayImage(img)}
-                >
+                <article key={id} className="menu-item">
                   <div className="menu-item2">
                     <img
                       src={img}
@@ -67,7 +68,7 @@ const Portfolio = () => {
                   </div>
                   <div className="item-info">
                     <header>
-                      <FaSearchengin className="icon" />
+                      <FaSearchengin className="icon" onClick={displayImage} />
                       <FaMap className="icon" />
                     </header>
                     <h4 className="item-text">{desc}</h4>
