@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
   .pop-img {
-    width: 27rem;
+    width: 90%;
     border-radius: 0.5rem;
     box-shadow: var(--dark-shadow);
   }
