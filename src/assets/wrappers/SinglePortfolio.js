@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   }
   .pop-img {
     width: 90%;
+    max-width: 27rem;
     border-radius: 0.5rem;
     box-shadow: var(--dark-shadow);
   }
