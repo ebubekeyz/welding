@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/BreadCrumb';
 
 const BreadCrumb = ({ heading, link1, link2, text1, text2 }) => {
@@ -7,9 +8,9 @@ const BreadCrumb = ({ heading, link1, link2, text1, text2 }) => {
         <div className="breadcrumb-inner">
           <h1>{heading}</h1>
           <ul className="inner-text">
-            <a href={link1}>
+            <Link to={link1}>
               <li>{text1}</li>
-            </a>
+            </Link>
             <li className="slash">/</li>
             <a href={link2}>
               <li>{text2}</li>

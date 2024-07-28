@@ -14,6 +14,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [show2, setShow2] = useState(true);
 
   window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset;
@@ -50,6 +51,9 @@ const Navbar = () => {
     nav.classList.toggle('hide-nav');
   };
 
+  const removeSidebar = () => {
+    setShow2(false);
+  };
   return (
     <Wrapper>
       <nav className="nav">
@@ -63,20 +67,20 @@ const Navbar = () => {
 
         <ul className="list">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <a href="/">Home</a>
           </li>
           <li>
-            <NavLink to="/services">services</NavLink>
+            <a href="/services">services</a>
           </li>
 
           <li>
-            <NavLink to="/about">about</NavLink>
+            <a href="/about">about</a>
           </li>
           <li>
-            <NavLink to="/portfolio">portfolio</NavLink>
+            <a href="/portfolio">portfolio</a>
           </li>
           <li>
-            <NavLink to="/contacts">contacts</NavLink>
+            <a href="/contacts">contacts</a>
           </li>
         </ul>
 
@@ -96,30 +100,30 @@ const Navbar = () => {
 
       <section className="nav-body">
         <div className="small-header">
-          <FaTimes className="times" onClick={closeTrans} />
+          <FaTimes className="times" />
         </div>
 
         <ul className="nav-body-list">
-          <NavLink to="/">
+          <a href="/">
             <li>Home </li>
-          </NavLink>
+          </a>
 
-          <NavLink to="/services">
+          <a href="/services">
             <li>services </li>
-          </NavLink>
+          </a>
 
-          <NavLink to="/about">
+          <a href="/about">
             <li>about </li>
-          </NavLink>
+          </a>
 
-          <NavLink to="/portfolio">
+          <a href="/portfolio">
             <li>portfolio </li>
-          </NavLink>
+          </a>
 
-          <NavLink to="/contacts">
+          <a href="/contacts">
             {' '}
             <li style={{ marginBottom: '1rem' }}>contacts </li>
-          </NavLink>
+          </a>
 
           <div className="socials2">
             <div className="detail2">
