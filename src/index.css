@@ -4,7 +4,7 @@ Fonts
 ===============
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
 =============== 
@@ -140,7 +140,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-8);
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Gupter', serif;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -179,9 +179,9 @@ a:hover {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 0.89em;
   font-weight: 500;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Gupter', serif;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
