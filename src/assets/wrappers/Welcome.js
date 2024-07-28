@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   }
   h1 {
     font-size: 1.8rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 0;
   }
   .col {

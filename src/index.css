@@ -4,6 +4,7 @@ Fonts
 ===============
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /*
 =============== 
@@ -124,7 +125,8 @@ h4 {
 }
 h1 {
   font-size: 3.2em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: 'Anton', sans-serif; */
+  font-family: 'Bebas Neue', sans-serif;
 }
 h2 {
   font-size: 2rem;
@@ -138,6 +140,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-8);
+  font-family: 'Nunito', sans-serif;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -329,7 +332,9 @@ a:hover {
 }
 
 .info h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
+  /* font-family: 'Bebas Neue', sans-serif; */
+  font-weight: 700;
   margin: 0rem auto;
   letter-spacing: 0;
   font-size: 1.9rem;
@@ -401,6 +406,9 @@ a:hover {
   display: none;
 }
 
+.add-anim {
+  animation: appear2 5s linear 1;
+}
 .anim {
   animation: appear 3s linear infinite;
 }
@@ -412,5 +420,13 @@ a:hover {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes appear2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

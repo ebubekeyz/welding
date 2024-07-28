@@ -14,6 +14,19 @@ import { Link } from 'react-router-dom';
 const allCategories = ['all', ...new Set(menu.map((item) => item.category))];
 
 const Portfolio = () => {
+  window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+    const menu = document.querySelectorAll('.menu-item2');
+    menu.forEach((item) => {
+      const menuHeight = item.getBoundingClientRect().height;
+
+      if (scrollHeight > menuHeight) {
+        item.classList.add('add-anim');
+      } else {
+        item.classList.remove('add-anim');
+      }
+    });
+  });
   const [people, setPeople] = useState(menu);
   const [currentPerson, setCurrentPerson] = useState(0);
 
