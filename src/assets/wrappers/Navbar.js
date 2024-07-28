@@ -122,7 +122,6 @@ const Wrapper = styled.div`
     background: rgba(0, 0, 0, 0.9);
     height: 100vh;
     text-align: center;
-    padding-top: 1rem;
   }
   .nav-body-list li {
     cursor: pointer;
