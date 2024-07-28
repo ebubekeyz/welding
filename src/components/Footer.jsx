@@ -19,7 +19,8 @@ const Footer = () => {
         <article>
           <h1>Newsletter</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, odio!
+            Subscribe to our newsletter for news, tips, and special offers
+            delivered right to your inbox.
           </p>
 
           <Form className="form">
@@ -38,8 +39,8 @@ const Footer = () => {
         <article className="footer-second">
           <img src="/logo.png" alt="logo" className="footer-logo" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            qui provident id autem cum aperiam hic maxime quos modi unde.
+            At Weld Central, we pride ourselves on delivering top-notch welding
+            solutions with unmatched precision and reliability.
           </p>
 
           <article className="socials">
