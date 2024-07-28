@@ -10,7 +10,7 @@ import { FaTimes, FaUserTimes } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
 
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -51,9 +51,6 @@ const Navbar = () => {
     nav.classList.toggle('hide-nav');
   };
 
-  const removeSidebar = () => {
-    setShow2(false);
-  };
   return (
     <Wrapper>
       <nav className="nav">
@@ -67,20 +64,20 @@ const Navbar = () => {
 
         <ul className="list">
           <li>
-            <a href="/">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="/services">services</a>
+            <NavLink to="/services">services</NavLink>
           </li>
 
           <li>
-            <a href="/about">about</a>
+            <NavLink to="/about">about</NavLink>
           </li>
           <li>
-            <a href="/portfolio">portfolio</a>
+            <NavLink to="/portfolio">portfolio</NavLink>
           </li>
           <li>
-            <a href="/contacts">contacts</a>
+            <NavLink to="/contacts">contacts</NavLink>
           </li>
         </ul>
 
@@ -100,30 +97,30 @@ const Navbar = () => {
 
       <section className="nav-body">
         <div className="small-header">
-          <FaTimes className="times" />
+          <FaTimes className="times" onClick={closeTrans} />
         </div>
 
         <ul className="nav-body-list">
-          <a href="/">
+          <NavLink to="/" onClick={closeTrans}>
             <li>Home </li>
-          </a>
+          </NavLink>
 
-          <a href="/services">
+          <NavLink to="/services" onClick={closeTrans}>
             <li>services </li>
-          </a>
+          </NavLink>
 
-          <a href="/about">
+          <NavLink to="/about" onClick={closeTrans}>
             <li>about </li>
-          </a>
+          </NavLink>
 
-          <a href="/portfolio">
+          <NavLink to="/portfolio" onClick={closeTrans}>
             <li>portfolio </li>
-          </a>
+          </NavLink>
 
-          <a href="/contacts">
+          <NavLink to="/contacts" onClick={closeTrans}>
             {' '}
             <li style={{ marginBottom: '1rem' }}>contacts </li>
-          </a>
+          </NavLink>
 
           <div className="socials2">
             <div className="detail2">
