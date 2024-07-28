@@ -9,9 +9,34 @@ import {
   FaMapPin,
   FaSearchengin,
 } from 'react-icons/fa6';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 const allCategories = ['all', ...new Set(menu.map((item) => item.category))];
 
 const Portfolio = () => {
+  const [people, setPeople] = useState(menu);
+  const [currentPerson, setCurrentPerson] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentPerson((oldPerson) => {
+      const result = (oldPerson - 1 + people.length) % people.length;
+      return result;
+    });
+  };
+  const nextSlide = () => {
+    setCurrentPerson((oldPerson) => {
+      const result = (oldPerson + 1) % people.length;
+      return result;
+    });
+  };
+
+  // useEffect(() => {
+  //   let sliderId = setInterval(() => {
+  //     nextSlide();
+  //   }, 5000);
+  //   return () => {
+  //     clearInterval(sliderId);
+  //   };
+  // }, [currentPerson]);
   const [show, setShow] = useState([]);
   const [show2, setShow2] = useState(true);
   const [menuItems, setMenuItems] = useState(menu);
@@ -25,18 +50,18 @@ const Portfolio = () => {
     const newItems = menu.filter((item) => item.category === category);
     setMenuItems(newItems);
   };
+
   const removePop = () => {
-    const hide = document.querySelector('#remove');
-    hide.style.display = 'none';
-    window.location.reload('/');
+    setShow('');
   };
+
   const displayImage = () => {
-    setShow(<Popup />);
+    setShow(<Popup onClick={removePop} />);
   };
 
   return (
     <>
-      {show2 && <div id="pop">{show}</div>}
+      {show ? <div id="pop">{show}</div> : ''}
       <Wrapper>
         <section>
           <div className="btn-container">

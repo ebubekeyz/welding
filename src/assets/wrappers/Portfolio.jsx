@@ -245,6 +245,18 @@ const Wrapper = styled.div`
   .next {
     right: 0;
   }
+
+  .times {
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.3);
+    border-radius: 100%;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+  }
+  .close {
+    top: 0;
+    right: 1rem;
+  }
   @media screen and (min-width: 800px) {
     .text {
       max-width: 45em;

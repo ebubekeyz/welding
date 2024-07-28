@@ -1,7 +1,7 @@
 import Wrapper from '../assets/wrappers/Portfolio';
 import { useEffect, useState } from 'react';
 import { menu } from '../utils';
-import { FaQuoteRight } from 'react-icons/fa';
+import { FaQuoteRight, FaTimes } from 'react-icons/fa';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Popup = ({ onClick, id }) => {
@@ -33,7 +33,7 @@ const Popup = ({ onClick, id }) => {
   return (
     <Wrapper>
       {' '}
-      <section className="slider-container" onClick={onClick} id={id}>
+      <section className="slider-container" id={id}>
         <div className="inner">
           {' '}
           {people.map((person, personIndex) => {
@@ -65,6 +65,9 @@ const Popup = ({ onClick, id }) => {
             </button>
             <button type="button" className="next" onClick={nextSlide}>
               <FiChevronRight />
+            </button>
+            <button type="button" className="btn next  close" onClick={onClick}>
+              <FaTimes className="times" />
             </button>
           </div>
         </div>
