@@ -170,9 +170,14 @@ p {
 a {
   color: var(--clr-grey-8);
   text-decoration: inherit;
+  font-family: 'Gupter', serif;
 }
 a:hover {
   color: rgba(235, 165, 16, 0.3);
+}
+.a:focus,
+.a:focus-visible {
+  color: 4px auto -webkit-focus-ring-color;
 }
 
 .btn {
