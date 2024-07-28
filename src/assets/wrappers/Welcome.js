@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     max-width: 30rem;
     margin: 0 auto;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   .add-anim {
     animation: appear 1s linear 1;
