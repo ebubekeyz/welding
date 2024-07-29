@@ -27,6 +27,21 @@ const Wrapper = styled.div`
     gap: 0.7rem;
     background: #131111;
   }
+
+  .team-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    margin: 0 auto;
+    background: transparent;
+    border: 2px solid white;
+    visibility: hidden;
+
+    z-index: 700;
+    transition: var(--transition);
+  }
   .team-cont-inner h3,
   h4 {
     padding: 0;
@@ -73,6 +88,10 @@ const Wrapper = styled.div`
   }
   .team-img-cont:hover::after {
     background: rgba(0, 0, 0, 0.5);
+  }
+
+  .team-img-cont:hover .team-btn {
+    visibility: visible;
   }
 
   @media screen and (min-width: 900px) {

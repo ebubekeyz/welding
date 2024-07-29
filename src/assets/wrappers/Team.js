@@ -21,6 +21,23 @@ const Wrapper = styled.div`
     place-items: center;
     gap: 0.7rem;
     background: #131111;
+
+    transition: var(--transition);
+  }
+
+  .team-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    margin: 0 auto;
+    background: transparent;
+    border: 2px solid white;
+    visibility: hidden;
+
+    z-index: 700;
+    transition: var(--transition);
   }
   .team-cont-inner h3,
   h4 {
@@ -54,7 +71,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
 
-  .team-img-cont::after {
+  .team-img-cont::before {
     content: '';
     position: absolute;
     top: 0;
@@ -64,8 +81,12 @@ const Wrapper = styled.div`
     background: rgba(0, 0, 0, 0.1);
     transition: var(--transition);
   }
-  .team-img-cont:hover::after {
+  .team-img-cont:hover::before {
     background: rgba(0, 0, 0, 0.5);
+  }
+
+  .team-img-cont:hover .team-btn {
+    visibility: visible;
   }
 
   @media screen and (min-width: 900px) {
@@ -73,6 +94,9 @@ const Wrapper = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
+    }
+    .team-btn {
+      width: 35%;
     }
     .team {
       padding: 0 2rem;

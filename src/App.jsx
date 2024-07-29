@@ -4,6 +4,7 @@ import { About, Error, HomeLayout, Landing, SinglePortfolio } from './pages';
 import { ErrorElement } from './components';
 
 import { loader as SinglePortfolioLoader } from './pages/SinglePortfolio';
+import SingleTeam, { loader as SingleTeamLoader } from './pages/SingleTeam';
 import { loader as SingleBlogLoader } from './pages/SingleBlog';
 import SingleBlog from './pages/SingleBlog';
 
@@ -34,6 +35,12 @@ const router = createBrowserRouter([
         errorElement: <ErrorElement />,
         element: <SingleBlog />,
         loader: SingleBlogLoader,
+      },
+      {
+        path: 'singleTeam/:id',
+        errorElement: <ErrorElement />,
+        element: <SingleTeam />,
+        loader: SingleTeamLoader,
       },
     ],
   },

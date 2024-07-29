@@ -25,15 +25,16 @@ const Team = () => {
             const { id, name, text, link, title, img } = item;
             return (
               <article className="team-cont-inner" key={id}>
-                <div className="team-img-cont">
+                <a href={`singleTeam/${id}`} className="team-img-cont">
                   <img src={img} alt={name} className="team-img" />
-                </div>
+                  <button className="btn team-btn">View Info</button>
+                </a>
                 <h3>{name}</h3>
                 <h4>{title}</h4>
                 <p>{text}</p>
 
                 <h5>
-                  <Link to={link}>Read More</Link>
+                  <Link to={`singleTeam/${id}`}>View Info</Link>
                 </h5>
               </article>
             );

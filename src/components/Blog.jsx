@@ -27,6 +27,7 @@ const Blog = () => {
               <article className="team-cont-inner" key={id}>
                 <a href={`/singleBlog/${id}`} className="team-img-cont">
                   <img src={img} alt={name} className="team-img" />
+                  <button className="btn team-btn">Read More</button>
                 </a>
 
                 <h4>{title}</h4>
