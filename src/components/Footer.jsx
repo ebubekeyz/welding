@@ -11,8 +11,11 @@ import {
   FaUser,
 } from 'react-icons/fa6';
 import moment from 'moment';
+import { blog } from '../utils';
 
 const Footer = () => {
+  const blogFilter = blog.filter((item) => item.featured === true);
+
   return (
     <Wrapper>
       <section className="footer">
@@ -60,33 +63,18 @@ const Footer = () => {
 
         <article className="footer-third">
           <h1>Latest News</h1>
-          <div className="block">
-            <FaPaperPlane className="circle" />
-            <a href="/">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Fugiat, neque.
-              </p>
-            </a>
-          </div>
-
-          <div className="block">
-            <FaPaperPlane className="circle" />
-            <a href="/">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Fugiat, neque.
-              </p>
-            </a>
-          </div>
-          <div className="block">
-            <FaPaperPlane className="circle" />
-            <a href="/">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Fugiat, neque.
-              </p>
-            </a>
+          <div className="third">
+            {blogFilter.slice(0, 3).map((item) => {
+              const { id, text, img } = item;
+              return (
+                <div className="block" key={id}>
+                  <img src={img} alt="image" className="foot-blog-img" />
+                  <a href={`singleBlog/${id}`}>
+                    <p>{text.slice(0, 69)}...</p>
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </article>
       </section>

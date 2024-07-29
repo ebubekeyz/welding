@@ -4,6 +4,8 @@ import { About, Error, HomeLayout, Landing, SinglePortfolio } from './pages';
 import { ErrorElement } from './components';
 
 import { loader as SinglePortfolioLoader } from './pages/SinglePortfolio';
+import { loader as SingleBlogLoader } from './pages/SingleBlog';
+import SingleBlog from './pages/SingleBlog';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,12 @@ const router = createBrowserRouter([
         errorElement: <ErrorElement />,
         element: <SinglePortfolio />,
         loader: SinglePortfolioLoader,
+      },
+      {
+        path: 'singleBlog/:id',
+        errorElement: <ErrorElement />,
+        element: <SingleBlog />,
+        loader: SingleBlogLoader,
       },
     ],
   },

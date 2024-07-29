@@ -25,16 +25,16 @@ const Blog = () => {
             const { id, name, text, link, title, img, category } = item;
             return (
               <article className="team-cont-inner" key={id}>
-                <div className="team-img-cont">
+                <a href={`/singleBlog/${id}`} className="team-img-cont">
                   <img src={img} alt={name} className="team-img" />
-                </div>
+                </a>
 
                 <h4>{title}</h4>
                 <p>{text}</p>
 
                 <div className="split">
                   <h5 className="one">
-                    <Link to={link}>Admin</Link>
+                    <Link to={link}>{name}</Link>
                   </h5>
                   <h5 className="two">{category}</h5>
                 </div>

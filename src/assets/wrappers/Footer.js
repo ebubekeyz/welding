@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  .foot-blog-img {
+    width: 2rem;
+  }
   .footer {
     padding: 2rem;
 
@@ -12,6 +15,9 @@ const Wrapper = styled.div`
   }
   .footer p {
     color: var(--clr-grey-8);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
   }
 
   .form {
@@ -92,14 +98,15 @@ const Wrapper = styled.div`
   .footer-second p {
     max-width: 30rem;
   }
+  .third {
+    display: grid;
+    gap: 0.1rem;
+  }
   @media screen and (min-width: 1130px) {
     .footer {
       display: flex;
       justify-content: space-between;
       gap: 3rem;
-    }
-    .footer-third {
-      text-align: start;
     }
 
     .socials {

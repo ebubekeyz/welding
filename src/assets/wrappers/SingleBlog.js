@@ -1,10 +1,68 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  .team {
-    margin-top: 4rem;
-    padding: 0 1rem;
+  .singleBlog {
+    margin-top: 18rem;
     margin-bottom: 4rem;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+    gap: 4rem;
+  }
+  .foot-blog-img {
+    width: 2rem;
+  }
+  .block p {
+    margin: 0;
+    padding: 0;
+    transition: var(--transition);
+  }
+  .block {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: rgba(235, 165, 16, 0.9);
+  }
+  .footer-third {
+    margin-top: 4rem;
+  }
+  .third {
+    display: grid;
+    gap: 1rem;
+  }
+  .form {
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+  .form-input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.8rem;
+  }
+  .flex-inner-form {
+    position: relative;
+  }
+  .envelope2 {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    margin-right: 15px;
+    color: var(--clr-grey-8);
+    cursor: pointer;
+  }
+  .envelope {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    cursor: pointer;
+    margin-right: 15px;
+    width: 3.6rem;
+
+    background: transparent;
+    color: var(--clr-grey-8);
   }
 
   .team h2 {
@@ -15,10 +73,6 @@ const Wrapper = styled.div`
   .team-cont {
     display: grid;
     gap: 1rem;
-  }
-  h4 {
-    text-align: center;
-    width: 90%;
   }
 
   .team-cont-inner {
@@ -37,24 +91,24 @@ const Wrapper = styled.div`
     padding-top: 2rem;
   }
   .team-cont-inner p {
-    text-align: center;
+    text-align: justify;
     padding: 0 0.6rem;
     padding-bottom: 2rem;
   }
 
   .team-cont-inner h5 {
     border-top: 1px solid var(--clr-grey-3);
-    text-align: center;
+
     width: 100%;
     padding: 0.5rem;
     text-transform: uppercase;
   }
   .team-img {
     height: 20rem;
+    width: 100%;
     object-fit: cover;
   }
   .team-img-cont {
-    height: 20rem;
     position: relative;
     width: 100%;
     transition: var(--transition);
@@ -76,26 +130,19 @@ const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 900px) {
-    .team-cont {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
-    }
-    .team {
-      padding: 0 2rem;
-      max-width: 1127px;
-      margin: 0 auto;
+    .singleBlog {
+      margin-top: 18rem;
       margin-bottom: 4rem;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+
+      width: 100%;
+      gap: 4rem;
     }
   }
-
-  .split {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .split .one {
-    border-right: 1px solid var(--clr-grey-4);
+  .search {
+    margin-top: 2rem;
   }
 `;
 
