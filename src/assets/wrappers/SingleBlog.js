@@ -90,10 +90,15 @@ const Wrapper = styled.div`
     color: rgba(235, 165, 16, 0.9);
     padding-top: 2rem;
   }
+  li {
+    margin: 1rem 0;
+  }
+
   .team-cont-inner p {
     text-align: justify;
-    padding: 0 0.6rem;
+
     padding-bottom: 2rem;
+    width: 90%;
   }
 
   .team-cont-inner h5 {

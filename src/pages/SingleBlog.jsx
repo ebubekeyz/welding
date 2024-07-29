@@ -14,6 +14,16 @@ const SingleBlog = () => {
   const blogFilter = blog.filter((item) => item.featured === true);
   const { blogItem } = useLoaderData();
   const { id, img, category, text, title, name, desc } = blogItem;
+
+  const func = () => {
+    const describe = document.querySelector('.desc');
+
+    describe.innerHTML = desc;
+  };
+
+  useEffect(() => {
+    func();
+  }, [func]);
   return (
     <Wrapper>
       <BreadCrumb
@@ -77,7 +87,7 @@ const SingleBlog = () => {
               </div>
 
               <h4>{title}</h4>
-              <p>{desc}</p>
+              <p className="desc"></p>
 
               <div className="split">
                 <h5 className="one">{name}</h5>
