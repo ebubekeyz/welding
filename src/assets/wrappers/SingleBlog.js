@@ -141,8 +141,23 @@ const Wrapper = styled.div`
       gap: 4rem;
     }
   }
+  h4,
+  h5 {
+    text-align: center;
+  }
   .search {
     margin-top: 2rem;
+  }
+  .split {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .split .one {
+    border-right: 1px solid var(--clr-grey-4);
+  }
+  .split h5 {
+    text-align: center;
   }
 `;
 

@@ -78,6 +78,11 @@ const SingleBlog = () => {
 
               <h4>{title}</h4>
               <p>{desc}</p>
+
+              <div className="split">
+                <h5 className="one">{name}</h5>
+                <h5 className="two">{category}</h5>
+              </div>
             </article>
           </div>
         </article>
