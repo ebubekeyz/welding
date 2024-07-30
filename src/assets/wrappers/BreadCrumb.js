@@ -13,12 +13,13 @@ const Wrapper = styled.div`
   }
   .breadcrumb-inner {
     position: absolute;
-    top: 60%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
-    gap: 1rem;
+    gap: 0rem;
     place-items: center;
+    width: 100%;
   }
 
   .slash {
