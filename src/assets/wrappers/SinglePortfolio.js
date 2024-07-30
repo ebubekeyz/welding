@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
   .pop-img {
-    width: 95%;
+    width: 90%;
     max-width: 27rem;
     border-radius: 0.5rem;
     box-shadow: var(--dark-shadow);
@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     display: grid;
     gap: 1rem;
     justify-items: center;
-    width: 95%;
+    width: 90%;
     max-width: 27rem;
     position: relative;
     margin-bottom: 4rem;
