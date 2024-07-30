@@ -29,7 +29,7 @@ const Wrapper = styled.div`
     position: relative;
     margin-bottom: 4rem;
     background: #131111;
-    margin-top: 20%;
+    margin-top: 60%;
   }
   .portfolio::after {
     content: '';
