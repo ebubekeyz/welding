@@ -76,6 +76,45 @@ export const list = [
   },
 ];
 
+export const services = [
+  {
+    id: nanoid(),
+    image: '/hero-img-1.jpg',
+    title: 'Finishing and Coating',
+    text: 'Applying protective coatings or paint to welded metal to prevent corrosion and enhance appearance.',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-2.jpg',
+    title: 'On-Site Services',
+    text: "Providing welding services at the customer’s location, useful for large or heavy equipment that can't be moved.",
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-3.jpg',
+    title: 'Consultation and Design',
+    text: 'Offering expertise on welding techniques and materials for specific projects.',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-4.jpg',
+    title: 'Metal Fabrication',
+    text: 'Designing and fabricating metal structures or components based on specific requirements.',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-5.jpg',
+    title: 'Welding Services',
+    text: 'Including MIG (Metal Inert Gas) and TIG (Tungsten Inert Gas) welding for various metals.',
+  },
+  {
+    id: nanoid(),
+    image: '/hero-img-6.jpg',
+    title: 'Repair and Maintenance',
+    text: 'Fixing damaged metal structures such as beams, frames, and supports.',
+  },
+];
+
 export const menu = [
   {
     id: 1,
