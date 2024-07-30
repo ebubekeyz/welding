@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   }
   .breadcrumb-inner {
     position: absolute;
-    top: 75%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: grid;
