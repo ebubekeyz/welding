@@ -8,7 +8,7 @@ const Error = () => {
     return (
       <Wrapper>
         <div className="error">
-          <img src="not-found.svg" alt="not-found" />
+          <img src="/not-found.svg" alt="not-found" />
           <h1 className="header">Page not found</h1>
           <p className="text">
             Sorry, we couldn’t find the page you’re looking for.
