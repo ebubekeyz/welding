@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
   .pop-img {
-    width: 90%;
+    width: 95%;
     max-width: 27rem;
     border-radius: 0.5rem;
     box-shadow: var(--dark-shadow);
@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     display: grid;
     gap: 1rem;
     justify-items: center;
-    width: 85%;
+    width: 95%;
     max-width: 27rem;
     position: relative;
     margin-bottom: 4rem;
@@ -56,6 +56,10 @@ const Wrapper = styled.div`
     text-align: center;
     max-width: 25rem;
   }
+  .portfolio h4 {
+    text-align: center;
+  }
+
   @media screen and (min-width: 1300px) {
     .portfolio {
       max-width: 60rem;
