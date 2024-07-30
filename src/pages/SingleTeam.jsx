@@ -45,9 +45,9 @@ const SingleTeam = () => {
         <article>
           <div className="team-cont">
             <article className="team-cont-inner">
-              <a href={`singleTeam/${id}`} className="team-img-cont">
+              <div className="team-img-cont">
                 <img src={img} alt={name} className="team-img" />
-              </a>
+              </div>
               <h3 style={{ marginTop: '1rem' }}>{name}</h3>
               <h4>{title}</h4>
             </article>

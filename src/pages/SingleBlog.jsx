@@ -55,9 +55,9 @@ const SingleBlog = () => {
                 return (
                   <div className="block" key={id}>
                     <img src={img} alt="image" className="foot-blog-img" />
-                    <a href={`/singleBlog/${id}`}>
+                    <div>
                       <p>{text.slice(0, 69)}...</p>
-                    </a>
+                    </div>
                   </div>
                 );
               })}
