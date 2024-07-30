@@ -68,7 +68,7 @@ const Contact = () => {
           <article className="contact-info">
             <div className="contact-inner">
               <h3>Contact Info</h3>
-              <div className="info-flex">
+              <div className="info-flex2">
                 <div className="inner-flex">
                   <FaMapPin className="c-ico" />
 

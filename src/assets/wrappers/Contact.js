@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   }
   .contact-info {
     display: grid;
+    gap: 1rem;
   }
   .days {
     display: flex;
@@ -60,7 +61,7 @@ const Wrapper = styled.div`
   }
   .inner-flex {
     display: flex;
-    gap: 1rem;
+    gap: 0.3rem;
     align-items: center;
   }
   .info-flex {
