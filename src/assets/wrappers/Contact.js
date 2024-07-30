@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   .contact {
     margin-top: 25rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin-bottom: 4rem;
   }
   .c-ico {
