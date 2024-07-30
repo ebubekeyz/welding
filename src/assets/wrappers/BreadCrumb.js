@@ -8,8 +8,8 @@ const Wrapper = styled.div`
     z-index: -200;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/breadcrumb.jpg') center/cover no-repeat;
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 40%;
   }
   .breadcrumb-inner {
     position: absolute;

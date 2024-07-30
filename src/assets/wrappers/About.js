@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .about-main {
-    margin-top: 22rem;
+    margin-top: 20%;
     padding: 0 0rem;
   }
 

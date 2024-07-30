@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .singleBlog {
-    margin-top: 22rem;
+    margin-top: 20%;
     margin-bottom: 4rem;
     padding: 0 1rem;
     display: grid;
