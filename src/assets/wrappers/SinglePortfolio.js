@@ -29,6 +29,7 @@ const Wrapper = styled.div`
     position: relative;
     margin-bottom: 4rem;
     background: #131111;
+    margin-top: 25rem;
   }
   .portfolio::after {
     content: '';
@@ -58,6 +59,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 1300px) {
     .portfolio {
       max-width: 60rem;
+      margin-top: 18rem;
     }
     .port-img {
       height: 60vh;

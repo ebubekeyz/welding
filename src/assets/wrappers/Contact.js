@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .contact {
-    margin-top: 25rem
+    margin-top: 25rem;
     padding: 0 2rem;
     margin-bottom: 4rem;
   }
