@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import {
   About,
+  Contact,
   Error,
   HomeLayout,
   Landing,
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'contact',
+        element: <Contact />,
         errorElement: <ErrorElement />,
       },
       {

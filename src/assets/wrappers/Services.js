@@ -57,11 +57,11 @@ const Wrapper = styled.div`
     text-transform: uppercase;
   }
   .team-img {
-    height: 20rem;
+    height: 15rem;
     object-fit: cover;
   }
   .team-img-cont {
-    height: 20rem;
+    height: 15rem;
     position: relative;
     width: 100%;
     transition: var(--transition);

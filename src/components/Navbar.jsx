@@ -77,7 +77,7 @@ const Navbar = () => {
             <NavLink to="/portfolio">Gallery</NavLink>
           </li>
           <li>
-            <NavLink to="/contacts">contacts</NavLink>
+            <NavLink to="/contact">contacts</NavLink>
           </li>
         </ul>
 
@@ -117,7 +117,7 @@ const Navbar = () => {
             <li>Gallery</li>
           </NavLink>
 
-          <NavLink to="/contacts" onClick={closeTrans}>
+          <NavLink to="/contact" onClick={closeTrans}>
             {' '}
             <li style={{ marginBottom: '1rem' }}>contacts </li>
           </NavLink>
