@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .team {
-    margin-top: 18rem;
+    margin-top: 22rem;
     padding: 0 1rem;
     margin-bottom: 4rem;
   }

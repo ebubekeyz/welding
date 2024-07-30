@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .services {
-    margin-top: 25rem;
-    padding: 0 2rem;
+    margin-top: 22rem;
+    padding: 0 1rem;
   }
   .team-cont {
     display: grid;
