@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .services {
-    margin-top: 19rem;
+    margin-top: 25rem;
     padding: 0 2rem;
   }
   .team-cont {
@@ -93,6 +93,9 @@ const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 900px) {
+    .services {
+      margin-top: 19rem;
+    }
     .team-cont {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .contact {
-    margin-top: 18rem;
+    margin-top: 25rem
     padding: 0 2rem;
     margin-bottom: 4rem;
   }
@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 900px) {
     .contact {
       display: grid;
+        margin-top: 18rem
       grid-template-columns: 1fr 300px;
       max-width: 1127px;
       margin: 0 auto;
