@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin-bottom: 8rem;
+  margin-bottom: 8%;
   .popup-inner {
     position: fixed;
     top: 0;
