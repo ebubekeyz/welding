@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   .partner {
     margin-top: 18rem;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     display: flex;
     gap: 1rem;
     background: rgba(235, 165, 16, 0.5);
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   }
   .partner-img {
     object-fit: contain;
-    height: 5rem;
+    height: 4rem;
     transition: var(--transition);
   }
   .partner-img:hover {

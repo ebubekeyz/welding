@@ -7,8 +7,8 @@ const Copyright = () => {
       <div className="copyright">
         <p>
           Copyright {moment().format('YYYY')} &copy; Created By{' '}
-          <a target="_blank" href="https://optilogix.netlify.app">
-            Code Addict
+          <a target="_blank" href="#">
+            Codify
           </a>
           &nbsp;All Rights Reserved
         </p>
