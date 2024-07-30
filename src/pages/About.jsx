@@ -1,5 +1,11 @@
 import Wrapper from '../assets/wrappers/About';
-import { BreadCrumb } from '../components';
+import {
+  BreadCrumb,
+  Founder,
+  HomeServices,
+  Partner,
+  Welcome,
+} from '../components';
 
 const About = () => {
   return (
@@ -13,19 +19,11 @@ const About = () => {
           text2="About"
         />
         <div className="about-main">
-          <p>
-            At Weld Central, we pride ourselves on delivering top-notch welding
-            solutions with unmatched precision and reliability. Established with
-            a commitment to excellence, our company specializes in a broad range
-            of welding services, from intricate repairs to large-scale
-            industrial projects. Leveraging cutting-edge technology and a team
-            of highly skilled professionals, we ensure that every weld is
-            executed with the highest standards of quality and safety. Our
-            mission is to exceed client expectations through innovation,
-            integrity, and an unwavering dedication to craftsmanship, making
-            Weld Central. the trusted partner for all your welding needs.
-          </p>
+          <Welcome />
+          <Founder />
+          <HomeServices />
         </div>
+        <Partner />
       </section>
     </Wrapper>
   );

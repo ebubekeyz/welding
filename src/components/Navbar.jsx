@@ -74,7 +74,7 @@ const Navbar = () => {
             <NavLink to="/about">about</NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio">portfolio</NavLink>
+            <NavLink to="/portfolio">Gallery</NavLink>
           </li>
           <li>
             <NavLink to="/contacts">contacts</NavLink>
@@ -114,7 +114,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink to="/portfolio" onClick={closeTrans}>
-            <li>portfolio </li>
+            <li>Gallery</li>
           </NavLink>
 
           <NavLink to="/contacts" onClick={closeTrans}>

@@ -6,9 +6,10 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr;
     align-items: center;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     box-shadow: var(--dark-shadow);
     background: #131111;
+    margin-bottom: 2rem;
   }
   .founder-img {
     object-fit: cover;

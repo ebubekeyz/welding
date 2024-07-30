@@ -6,3 +6,4 @@ export { default as SinglePortfolio } from './SinglePortfolio';
 export { default as SingleBlog } from './SingleBlog';
 export { default as SingleTeam } from './SingleTeam';
 export { default as Services } from './Services';
+export { default as Portfolio } from './Portfolio';

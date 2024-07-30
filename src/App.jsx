@@ -5,6 +5,7 @@ import {
   Error,
   HomeLayout,
   Landing,
+  Portfolio,
   Services,
   SinglePortfolio,
 } from './pages';
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Services />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'portfolio',
+        element: <Portfolio />,
         errorElement: <ErrorElement />,
       },
       {
