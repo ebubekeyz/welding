@@ -13,6 +13,7 @@ import {
 import { ErrorElement } from './components';
 
 import { action as ContactAction } from './pages/Contact';
+import { action as QuoteAction } from './components/Quote';
 
 import { loader as SinglePortfolioLoader } from './pages/SinglePortfolio';
 import SingleTeam, { loader as SingleTeamLoader } from './pages/SingleTeam';
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        action: QuoteAction,
         errorElement: <ErrorElement />,
       },
       {
