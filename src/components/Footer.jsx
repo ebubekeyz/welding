@@ -11,9 +11,43 @@ import {
   FaUser,
 } from 'react-icons/fa6';
 import moment from 'moment';
-import { blog } from '../utils';
+import { blog, customFetch } from '../utils';
+import { toast } from 'react-toastify';
+import { useState } from 'react';
 
 const Footer = () => {
+  const [footer, setFooter] = useState([
+    {
+      email: '',
+    },
+  ]);
+
+  const handleSubmit = async (e) => {
+    const text = document.querySelector('.form-btn');
+    const email = document.querySelector('.email');
+    e.preventDefault();
+    const emailValue = e.target.email.value;
+
+    setFooter({
+      email: emailValue,
+    });
+    try {
+      text.textContent = 'Sending...';
+      const response = await customFetch.post('/notification', {
+        email: footer.email,
+      });
+
+      toast.success(`Email Subscription Successful`);
+      email.value = '';
+      text.textContent = 'Sent';
+      return null;
+    } catch (error) {
+      console.log(error);
+
+      toast.error('Something went wrong');
+      return null;
+    }
+  };
   const blogFilter = blog.filter((item) => item.featured === true);
 
   return (
@@ -27,17 +61,20 @@ const Footer = () => {
             delivered right to your inbox.
           </p>
 
-          <Form className="form">
+          <form onSubmit={handleSubmit} className="form">
             <div className="flex-inner-form">
               <input
-                type="text"
-                className="form-input"
+                type="email"
+                name="email"
+                className="form-input email"
                 placeholder="Email Address"
               />
               <FaEnvelope className="envelope" />
             </div>
-            <button className="btn sub-btn">Submit</button>
-          </Form>
+            <button type="submit" className="btn sub-btn">
+              Submit
+            </button>
+          </form>
         </article>
 
         <article className="footer-second">
