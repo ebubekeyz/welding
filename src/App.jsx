@@ -12,9 +12,6 @@ import {
 } from './pages';
 import { ErrorElement } from './components';
 
-import { action as ContactAction } from './pages/Contact';
-import { action as QuoteAction } from './components/Quote';
-
 import { loader as SinglePortfolioLoader } from './pages/SinglePortfolio';
 import SingleTeam, { loader as SingleTeamLoader } from './pages/SingleTeam';
 import { loader as SingleBlogLoader } from './pages/SingleBlog';
@@ -29,7 +26,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
-        action: QuoteAction,
         errorElement: <ErrorElement />,
       },
       {
@@ -41,7 +37,6 @@ const router = createBrowserRouter([
         path: 'contact',
         errorElement: <ErrorElement />,
         element: <Contact />,
-        action: ContactAction,
       },
       {
         path: 'services',

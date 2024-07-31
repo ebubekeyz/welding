@@ -1,9 +1,10 @@
 import Wrapper from '../assets/wrappers/SingleBlog';
 import { Form, Link, useLoaderData } from 'react-router-dom';
-import { blog } from '../utils';
+import { blog, customFetch } from '../utils';
 import { useEffect, useState } from 'react';
 import { BreadCrumb } from '../components';
 import { FaEnvelope } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 export const loader = async ({ params }) => {
   const blogItem = blog.find((item) => item.id === Number(params.id));
@@ -11,6 +12,44 @@ export const loader = async ({ params }) => {
   return { blogItem };
 };
 const SingleBlog = () => {
+  const [send, setSend] = useState('Subscribe');
+  const [footer, setFooter] = useState({
+    email: '',
+  });
+
+  const handleSubmit = async (e) => {
+    let email = document.querySelector('.email');
+    let form = document.querySelector('.form');
+
+    e.preventDefault();
+
+    try {
+      setSend('Subscribing...');
+
+      const response = await customFetch.post('/notification', {
+        email: footer.email,
+      });
+
+      toast.success(`Email Subscription Successful`);
+      setFooter({
+        email: '',
+      });
+
+      setSend('Subscribe');
+
+      return null;
+    } catch (error) {
+      console.log(error);
+
+      setSend('Subscribe');
+      toast.error('Something went wrong');
+      setFooter({
+        email: '',
+      });
+
+      return null;
+    }
+  };
   const blogFilter = blog.filter((item) => item.featured === true);
   const { blogItem } = useLoaderData();
   const { id, img, category, text, title, name, desc } = blogItem;
@@ -36,14 +75,21 @@ const SingleBlog = () => {
       <div className="singleBlog">
         <article>
           <h3>Newsletter</h3>
-          <form className="form">
+          <form onSubmit={handleSubmit} className="form">
             <div className="flex-inner-form">
               <input
                 type="text"
+                name="email"
+                value={footer.email}
+                onChange={(e) => {
+                  setFooter({ ...footer, [e.target.name]: e.target.value });
+                }}
                 className="form-input"
                 placeholder="Email Address"
               />
-              <FaEnvelope type="submit" className="envelope2" />
+              <button type="submit">
+                <FaEnvelope className="envelope2" />
+              </button>
             </div>
           </form>
 
