@@ -110,7 +110,7 @@ const SingleBlog = () => {
             </div>
           </article>
 
-          <div className="search">
+          {/* <div className="search">
             <h3>Search</h3>
             <Form className="form">
               <div className="flex-inner-form">
@@ -122,7 +122,7 @@ const SingleBlog = () => {
                 <img src="/search.svg" alt="search" className="btn envelope" />
               </div>
             </Form>
-          </div>
+          </div> */}
         </article>
         <article>
           {' '}
