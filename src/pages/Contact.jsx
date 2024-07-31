@@ -83,7 +83,7 @@ const Contact = () => {
 
                 <div className="inner-flex">
                   <FaPencil className="c-ico" />
-                  <p>mail@example.com</p>
+                  <p>help.weldcentral@gmail.com</p>
                 </div>
               </div>
             </div>

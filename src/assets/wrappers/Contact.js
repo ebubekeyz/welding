@@ -17,18 +17,7 @@ const Wrapper = styled.div`
     display: flex;
     gap: 1rem;
   }
-  @media screen and (min-width: 900px) {
-    .contact {
-      display: grid;
-        margin-top: 18rem
-      grid-template-columns: 1fr 300px;
-      max-width: 1127px;
-      margin: 0 auto;
-      margin-top: 18rem;
-      width: 100%;
-      gap: 4rem;
-    }
-  }
+
   .form {
     margin-bottom: 3rem;
   }
@@ -77,6 +66,16 @@ const Wrapper = styled.div`
     width: 15rem;
   }
   @media screen and (min-width: 900px) {
+    .contact {
+      display: grid;
+      margin-top: 18rem;
+      grid-template-columns: 1fr 300px;
+      max-width: 1127px;
+      margin: 0 auto;
+      margin-top: 18rem;
+      width: 100%;
+      gap: 4rem;
+    }
     .input-1 {
       display: grid;
       grid-template-columns: 1fr 1fr;

@@ -85,12 +85,12 @@ const Navbar = () => {
           <div className="detail">
             <FaPhone className="ico" />
 
-            <p>+1 333 222 333</p>
+            <p>1(800) 123-12345</p>
           </div>
           <div className="detail">
             {' '}
             <FaEnvelope className="ico" />
-            <p>weldcentral@gmail.com</p>
+            <p>help.weldcentral@gmail.com</p>
           </div>
         </article>
       </nav>
@@ -125,11 +125,11 @@ const Navbar = () => {
           <div className="socials2">
             <div className="detail2">
               <FaPhone className="ico" />
-              <p>+1 333 222 333</p>
+              <p>1(800) 123-12345</p>
             </div>
             <div className="detail2">
               <FaEnvelope className="ico" />
-              <p>weldcentral@gmail.com</p>
+              <p>help.weldcentral@gmail.com</p>
             </div>
           </div>
         </ul>
