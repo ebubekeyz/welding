@@ -1,6 +1,7 @@
-import { Form } from 'react-router-dom';
+import { Form, redirect } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Contact';
 import { BreadCrumb, Partner } from '../components';
+import { toast } from 'react-toastify';
 import {
   FaMapLocation,
   FaMapLocationDot,
@@ -11,6 +12,40 @@ import {
   FaPhone,
 } from 'react-icons/fa6';
 import { FaHistory, FaMapSigns, FaTimes } from 'react-icons/fa';
+import { customFetch } from '../utils';
+
+export const action = async ({ request }) => {
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+  console.log(data);
+  const text = document.querySelector('.form-btn');
+  let name = document.querySelector('.name');
+  let email = document.querySelector('.email');
+  let phone = document.querySelector('.phone');
+  let subject = document.querySelector('.subject');
+  let mess = document.querySelector('.message');
+
+  try {
+    text.textContent = 'Sending...';
+    const response = await customFetch.post('/contact', data);
+    const message = response.data.msg || 'Registration Failed';
+    toast.success(`${message}`);
+
+    name.value = '';
+
+    email.value = '';
+    phone.value = '';
+    subject.value = '';
+    mess.value = '';
+    text.textContent = 'Message Sent';
+    return redirect('/contact');
+  } catch (error) {
+    console.log(error);
+    const errorMessage = error.response.data.msg;
+    toast.error(errorMessage);
+    return null;
+  }
+};
 
 const Contact = () => {
   return (
@@ -32,33 +67,33 @@ const Contact = () => {
                 <input
                   name="name"
                   type="text"
-                  className="form-input"
+                  className="form-input name"
                   placeholder="Full Name"
                 />
                 <input
                   name="email"
                   type="email"
-                  className="form-input"
+                  className="form-input email"
                   placeholder="Email Address"
                 />
                 <input
                   name="phone"
                   type="text"
-                  className="form-input"
+                  className="form-input phone"
                   placeholder="Phone Number"
                 />
 
                 <input
                   name="subject"
                   type="text"
-                  className="form-input"
+                  className="form-input subject"
                   placeholder="Subject"
                 />
               </div>
               <textarea
                 name="message"
                 id=""
-                className="textarea"
+                className="textarea message"
                 placeholder="Message"
               ></textarea>
               <button className="btn form-btn">Send Now</button>

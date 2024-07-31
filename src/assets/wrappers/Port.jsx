@@ -4,6 +4,7 @@ const Wrapper = styled.div`
   .about-main {
     margin-top: 285px;
     padding: 0 1rem;
+    padding-bottom: 2rem;
   }
 
   .popup-inner {

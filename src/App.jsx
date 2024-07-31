@@ -12,6 +12,8 @@ import {
 } from './pages';
 import { ErrorElement } from './components';
 
+import { action as ContactAction } from './pages/Contact';
+
 import { loader as SinglePortfolioLoader } from './pages/SinglePortfolio';
 import SingleTeam, { loader as SingleTeamLoader } from './pages/SingleTeam';
 import { loader as SingleBlogLoader } from './pages/SingleBlog';
@@ -35,8 +37,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'contact',
-        element: <Contact />,
         errorElement: <ErrorElement />,
+        element: <Contact />,
+        action: ContactAction,
       },
       {
         path: 'services',

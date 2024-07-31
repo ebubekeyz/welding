@@ -40,6 +40,7 @@ const Wrapper = styled.div`
   h4 {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
   .team-cont-inner h4 {
     color: rgba(235, 165, 16, 0.9);
