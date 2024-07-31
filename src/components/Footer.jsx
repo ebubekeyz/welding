@@ -1,4 +1,4 @@
-import { Form } from 'react-router-dom';
+import { Form, useNavigate } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Footer';
 import {
   FaCalendar,
@@ -16,35 +16,43 @@ import { toast } from 'react-toastify';
 import { useState } from 'react';
 
 const Footer = () => {
-  const [footer, setFooter] = useState([
-    {
-      email: '',
-    },
-  ]);
+  const nav = useNavigate();
+  const [send, setSend] = useState('Subscribe');
+  const [footer, setFooter] = useState({
+    email: '',
+  });
 
   const handleSubmit = async (e) => {
     const text = document.querySelector('.form-btn');
-    const email = document.querySelector('.email');
-    e.preventDefault();
-    const emailValue = e.target.email.value;
+    let email = document.querySelector('.email');
+    let form = document.querySelector('.form');
 
-    setFooter({
-      email: emailValue,
-    });
+    e.preventDefault();
+
     try {
+      setSend('Subscribing...');
       text.textContent = 'Sending...';
       const response = await customFetch.post('/notification', {
         email: footer.email,
       });
 
       toast.success(`Email Subscription Successful`);
-      email.value = '';
+      setFooter({
+        email: '',
+      });
       text.textContent = 'Sent';
+      setSend('Subscribe');
+
       return null;
     } catch (error) {
       console.log(error);
 
+      setSend('Subscribe');
       toast.error('Something went wrong');
+      setFooter({
+        email: '',
+      });
+
       return null;
     }
   };
@@ -66,13 +74,17 @@ const Footer = () => {
               <input
                 type="email"
                 name="email"
+                value={footer.email}
+                onChange={(e) => {
+                  setFooter({ ...footer, [e.target.name]: e.target.value });
+                }}
                 className="form-input email"
                 placeholder="Email Address"
               />
               <FaEnvelope className="envelope" />
             </div>
             <button type="submit" className="btn sub-btn">
-              Submit
+              {send}
             </button>
           </form>
         </article>
