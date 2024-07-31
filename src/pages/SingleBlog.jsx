@@ -99,12 +99,12 @@ const SingleBlog = () => {
               {blogFilter.slice(0, 3).map((item) => {
                 const { id, text, img } = item;
                 return (
-                  <div className="block" key={id}>
+                  <a href={`/singleBlog/${id}`} className="block" key={id}>
                     <img src={img} alt="image" className="foot-blog-img" />
                     <div>
                       <p>{text.slice(0, 69)}...</p>
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>

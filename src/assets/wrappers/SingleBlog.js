@@ -84,11 +84,15 @@ const Wrapper = styled.div`
   .team-cont-inner h3,
   h4 {
     padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: 0;
   }
   .team-cont-inner h4 {
     color: rgba(235, 165, 16, 0.9);
     padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
   }
   li {
     margin: 1rem 0;
@@ -96,9 +100,10 @@ const Wrapper = styled.div`
 
   .team-cont-inner p {
     text-align: justify;
-
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 2rem;
-    width: 90%;
+    width: 92%;
   }
 
   .team-cont-inner h5 {
@@ -146,7 +151,7 @@ const Wrapper = styled.div`
       gap: 4rem;
     }
   }
-  h4,
+
   h5 {
     text-align: center;
   }
@@ -163,6 +168,9 @@ const Wrapper = styled.div`
   }
   .split h5 {
     text-align: center;
+  }
+
+  .team-cont-inner h4 {
   }
 `;
 
