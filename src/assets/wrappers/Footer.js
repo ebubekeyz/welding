@@ -102,7 +102,7 @@ const Wrapper = styled.div`
     display: grid;
     gap: 0.1rem;
   }
-  @media screen and (min-width: 1130px) {
+  @media screen and (min-width: 900px) {
     .footer {
       display: flex;
       justify-content: space-between;

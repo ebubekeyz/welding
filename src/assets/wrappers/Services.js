@@ -44,6 +44,7 @@ const Wrapper = styled.div`
   }
   .team-cont-inner h4 {
     color: rgba(235, 165, 16, 0.9);
+    text-align: center;
   }
   .team-cont-inner p {
     text-align: center;

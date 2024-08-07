@@ -55,7 +55,7 @@ const Contact = () => {
       console.log(error);
 
       setSend('Send');
-      toast.error('Something went wrong');
+      toast.error(`Something went wrong`);
       setContact({
         email: '',
         name: '',
